@@ -2,6 +2,11 @@ package com.example.zeroCountTest;
 
 import java.util.Random;
 
+/*
+Given an array of integers which consists of zeros followed by non-zeros entries.
+Find an efficient algorithm that return no of zeros.
+*/
+
 public class CountZeros {
 
 	// Name Method (t=O(n), space=O(1))
