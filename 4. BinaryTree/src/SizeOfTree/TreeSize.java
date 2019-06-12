@@ -5,7 +5,6 @@ import java.util.Queue;
 
 public class TreeSize {
 
-	
 	// Tc = O(n), Sc = O(n) [In worst case maximum stack memory will be utilised for
 	// one recursion is one-sided-Binary tree of size n]
 	public static int treeSize1(BTNode root) {
