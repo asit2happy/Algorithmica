@@ -8,5 +8,4 @@ public class BTNode {
 	public BTNode(Integer data) {
 		this.data= data;
 	}
-
 }
