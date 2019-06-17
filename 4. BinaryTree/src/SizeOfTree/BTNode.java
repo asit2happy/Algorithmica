@@ -2,9 +2,9 @@ package SizeOfTree;
 
 public class BTNode {
 	
-	Integer data;
-	BTNode left;
-	BTNode right;
+	public Integer data;
+	public BTNode left;
+	public BTNode right;
 	public BTNode(Integer data) {
 		this.data= data;
 	}
