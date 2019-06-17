@@ -19,6 +19,7 @@ public class SumofLeftLeaves {
 		int ls = leftSum(root.left, 'L');
 		int rs = leftSum(root.right, 'R');
 
+		
 		return ls + rs;
 	}
 
