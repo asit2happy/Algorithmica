@@ -15,30 +15,25 @@ public class PrintLargestInLevel {
 		q.add(null);
 		List<Integer> list=new ArrayList<Integer>();
 		list.add(root.data);
-		int sum = 0;
-		int bigestl=0;
+		int max=0;
 		
 		while (!q.isEmpty()) {
 			BTNode temp = q.remove();
 			if (temp == null) {
-				System.out.println(sum);
-				list.add(bigestl);
-				sum=0;
-				bigestl=0;
+				list.add(max);
+				max=0;
 				if(!q.isEmpty())
 					q.add(null);
-
 			} else {
-				sum = +temp.data;
-				if (root.left != null)
+				if (root.left != null) {
 					q.add(root.left);
-				if (root.right != null)
+					max=Math.max(max, root.left.data);
+				}
+				if (root.right != null) {
 					q.add(root.right);
-
-                if(root.left.data>root.right.data)
-                    bigestl=root.left.data;
-                else
-                    bigestl=root.right.data;
+					max=Math.max(max, root.right.data);
+					
+				}				
 			}
 		}
 		return list;
